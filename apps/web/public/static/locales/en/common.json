@@ -708,6 +708,8 @@
   "plan_upgrade_instructions": "You can <1>upgrade here</1>.",
   "event_types_page_title": "Event Types",
   "event_types_page_subtitle": "Create events to share for people to book on your calendar.",
+  "my_page_page_title": "My Page",
+  "my_page_page_subtitle": "Manage your content and personal information",
   "new": "New",
   "new_event_type_btn": "New event type",
   "new_event_type_heading": "Create your first event type",

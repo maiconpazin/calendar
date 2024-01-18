@@ -84,6 +84,14 @@ export const KBarRoot = ({ children }: { children: React.ReactNode }) => {
         perform: () => router.push("/event-types"),
       },
       {
+        id: "my-page",
+        name: "my_page_page_title",
+        section: "my_page_page_title",
+        shortcut: ["m", "p"],
+        keywords: "my page",
+        perform: () => router.push("/my-page"),
+      },
+      {
         id: "app-store",
         name: "app_store",
         section: "apps",

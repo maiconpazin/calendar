@@ -699,6 +699,8 @@
   "plan_upgrade_instructions": "Pode <1>actualizar aqui</1>.",
   "event_types_page_title": "Tipos de evento",
   "event_types_page_subtitle": "Crie eventos para partilhar, para que as pessoas façam reservas no seu calendário.",
+  "my_page_page_title": "Minha Página",
+  "my_page_page_subtitle": "Gerencie seus conteúdos e informações pessoais",
   "new": "Novo",
   "new_event_type_btn": "Novo tipo de evento",
   "new_event_type_heading": "Crie o seu primeiro tipo de evento",

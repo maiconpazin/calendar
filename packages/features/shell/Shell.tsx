@@ -67,24 +67,19 @@ import {
 import {
   ArrowLeft,
   ArrowRight,
-  BarChart,
   Calendar,
   ChevronDown,
   Clock,
   Copy,
   Download,
   ExternalLink,
-  FileText,
-  Grid,
   HelpCircle,
   Link as LinkIcon,
   LogOut,
   Map,
   Moon,
-  MoreHorizontal,
   Settings,
   User as UserIcon,
-  Users,
   Zap,
 } from "@calcom/ui/components/icon";
 import { Discord } from "@calcom/ui/components/icon/Discord";
@@ -92,7 +87,6 @@ import { IS_VISUAL_REGRESSION_TESTING } from "@calcom/web/constants";
 
 import { useOrgBranding } from "../ee/organizations/context/provider";
 import FreshChatProvider from "../ee/support/lib/freshchat/FreshChatProvider";
-import { TeamInviteBadge } from "./TeamInviteBadge";
 
 // need to import without ssr to prevent hydration errors
 const Tips = dynamic(() => import("@calcom/features/tips").then((mod) => mod.Tips), {
@@ -576,6 +570,11 @@ const MORE_SEPARATOR_NAME = "more";
 
 const navigation: NavigationItemType[] = [
   {
+    name: "my_page_page_title",
+    href: "/my-page",
+    icon: UserIcon,
+  },
+  {
     name: "event_types_page_title",
     href: "/event-types",
     icon: LinkIcon,
@@ -592,6 +591,7 @@ const navigation: NavigationItemType[] = [
     href: "/availability",
     icon: Clock,
   },
+  /*
   {
     name: "teams",
     href: "/teams",
@@ -640,16 +640,19 @@ const navigation: NavigationItemType[] = [
     icon: FileText,
     isCurrent: ({ pathname }) => pathname?.startsWith("/apps/routing-forms/") ?? false,
   },
+  */
   {
     name: "workflows",
     href: "/workflows",
     icon: Zap,
   },
+  /*
   {
     name: "insights",
     href: "/insights",
     icon: BarChart,
   },
+  */
 ];
 
 const moreSeparatorIndex = navigation.findIndex((item) => item.name === MORE_SEPARATOR_NAME);

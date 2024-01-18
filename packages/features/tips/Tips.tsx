@@ -4,6 +4,7 @@ import { useLocale } from "@calcom/lib/hooks/useLocale";
 import { localStorage } from "@calcom/lib/webstorage";
 import { Card } from "@calcom/ui";
 
+/*
 export const tips = [
   {
     id: 12,
@@ -102,6 +103,18 @@ export const tips = [
     href: "https://cal.com/blog/cal-v-1-9",
   },
 ];
+*/
+
+export const tips = [
+  {
+    id: 12,
+    thumbnailUrl: "https://cal.com/og-image-cal-ai.jpg",
+    mediaLink: "https://go.cal.com/cal-ai",
+    title: "Oneviser Boosting",
+    description: "Almente o alcance da sua págia e receba mais visitas",
+    href: "https://oneviser.com/boosting",
+  },
+];
 
 const reversedTips = tips.slice(0).reverse();
 
@@ -171,7 +184,7 @@ function Tips() {
                 title={tip.title}
                 description={tip.description}
                 learnMore={{ href: tip.href, text: t("learn_more") }}
-                actionButton={{ onClick: () => handleRemoveItem(tip.id), child: t("dismiss") }}
+                actionButton={{ onClick: () => null /*() => handleRemoveItem(tip.id)*/, child: t("dismiss") }}
               />
             </div>
           </div>
